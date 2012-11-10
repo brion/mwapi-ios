@@ -1,13 +1,13 @@
 //
-//  mwapi.h
+//  MWApiRequestBuilder.h
 //  mwapi
 //
-//  Created by Brion on 11/5/12.
+//  Created by Brion on 11/6/12.
 //  Copyright (c) 2012 Wikimedia Foundation. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface mwapi : NSObject
+@interface MWApiRequestBuilder : NSObject
 
 @end

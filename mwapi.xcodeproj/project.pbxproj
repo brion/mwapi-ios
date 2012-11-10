@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D42F2D6C1648020B00131D98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42F2D6B1648020B00131D98 /* Foundation.framework */; };
-		D42F2D711648020B00131D98 /* mwapi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42F2D701648020B00131D98 /* mwapi.h */; };
-		D42F2D731648020B00131D98 /* mwapi.m in Sources */ = {isa = PBXBuildFile; fileRef = D42F2D721648020B00131D98 /* mwapi.m */; };
+		D42F2D711648020B00131D98 /* MWApi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42F2D701648020B00131D98 /* MWApi.h */; };
+		D42F2D731648020B00131D98 /* MWApi.m in Sources */ = {isa = PBXBuildFile; fileRef = D42F2D721648020B00131D98 /* MWApi.m */; };
 		D42F2D7B1648020C00131D98 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42F2D7A1648020C00131D98 /* SenTestingKit.framework */; };
 		D42F2D7D1648020C00131D98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42F2D7C1648020C00131D98 /* UIKit.framework */; };
 		D42F2D7E1648020C00131D98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42F2D6B1648020B00131D98 /* Foundation.framework */; };
 		D42F2D811648020C00131D98 /* libmwapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D42F2D681648020B00131D98 /* libmwapi.a */; };
 		D42F2D871648020C00131D98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D42F2D851648020C00131D98 /* InfoPlist.strings */; };
 		D42F2D8A1648020C00131D98 /* mwapiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D42F2D891648020C00131D98 /* mwapiTests.m */; };
+		D496FAF116485058007216ED /* MWApiResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D496FAF016485058007216ED /* MWApiResult.m */; };
+		D496FAF41648506C007216ED /* MWApiRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D496FAF31648506C007216ED /* MWApiRequestBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				D42F2D711648020B00131D98 /* mwapi.h in CopyFiles */,
+				D42F2D711648020B00131D98 /* MWApi.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +47,8 @@
 		D42F2D681648020B00131D98 /* libmwapi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmwapi.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42F2D6B1648020B00131D98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D42F2D6F1648020B00131D98 /* mwapi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mwapi-Prefix.pch"; sourceTree = "<group>"; };
-		D42F2D701648020B00131D98 /* mwapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mwapi.h; sourceTree = "<group>"; };
-		D42F2D721648020B00131D98 /* mwapi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mwapi.m; sourceTree = "<group>"; };
+		D42F2D701648020B00131D98 /* MWApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWApi.h; sourceTree = "<group>"; };
+		D42F2D721648020B00131D98 /* MWApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWApi.m; sourceTree = "<group>"; };
 		D42F2D791648020C00131D98 /* mwapiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mwapiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42F2D7A1648020C00131D98 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D42F2D7C1648020C00131D98 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -54,6 +56,11 @@
 		D42F2D861648020C00131D98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D42F2D881648020C00131D98 /* mwapiTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mwapiTests.h; sourceTree = "<group>"; };
 		D42F2D891648020C00131D98 /* mwapiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mwapiTests.m; sourceTree = "<group>"; };
+		D496FAEF16485058007216ED /* MWApiResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWApiResult.h; sourceTree = "<group>"; };
+		D496FAF016485058007216ED /* MWApiResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWApiResult.m; sourceTree = "<group>"; };
+		D496FAF21648506C007216ED /* MWApiRequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWApiRequestBuilder.h; sourceTree = "<group>"; };
+		D496FAF31648506C007216ED /* MWApiRequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWApiRequestBuilder.m; sourceTree = "<group>"; };
+		D496FAF51648519D007216ED /* MWApiProgressListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWApiProgressListener.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +118,14 @@
 		D42F2D6D1648020B00131D98 /* mwapi */ = {
 			isa = PBXGroup;
 			children = (
-				D42F2D701648020B00131D98 /* mwapi.h */,
-				D42F2D721648020B00131D98 /* mwapi.m */,
+				D42F2D701648020B00131D98 /* MWApi.h */,
+				D42F2D721648020B00131D98 /* MWApi.m */,
 				D42F2D6E1648020B00131D98 /* Supporting Files */,
+				D496FAEF16485058007216ED /* MWApiResult.h */,
+				D496FAF016485058007216ED /* MWApiResult.m */,
+				D496FAF21648506C007216ED /* MWApiRequestBuilder.h */,
+				D496FAF31648506C007216ED /* MWApiRequestBuilder.m */,
+				D496FAF51648519D007216ED /* MWApiProgressListener.h */,
 			);
 			path = mwapi;
 			sourceTree = "<group>";
@@ -243,7 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D42F2D731648020B00131D98 /* mwapi.m in Sources */,
+				D42F2D731648020B00131D98 /* MWApi.m in Sources */,
+				D496FAF116485058007216ED /* MWApiResult.m in Sources */,
+				D496FAF41648506C007216ED /* MWApiRequestBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +411,7 @@
 				D42F2D8F1648020C00131D98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D42F2D901648020C00131D98 /* Build configuration list for PBXNativeTarget "mwapiTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +420,7 @@
 				D42F2D921648020C00131D98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
